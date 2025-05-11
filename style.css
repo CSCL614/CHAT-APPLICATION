@@ -1,0 +1,7 @@
+body.bg-image {
+  background: url('https://source.unsplash.com/1600x900/?chat,technology') no-repeat center center fixed;
+  background-size: cover;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+}
