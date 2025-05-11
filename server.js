@@ -1,24 +1,25 @@
 const express = require('express');
+const path = require('path');
 const app = express();
-const http = require('http').createServer(app);
-const io = require('socket.io')(http);
-const PORT = process.env.PORT || 3000;
 
-app.use(express.static('public'));
+// Serve static files (like HTML, CSS, JS)
+app.use(express.static(path.join(__dirname, 'public')));
 
-io.on('connection', (socket) => {
-    console.log('User connected');
-
-    // Listen for chat messages from clients
-    socket.on('chat message', (data) => {
-        io.emit('chat message', data);  // Emit both the user and message
-    });
-
-    socket.on('disconnect', () => {
-        console.log('User disconnected');
-    });
+// Set up the root route to serve the index.html file
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-http.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+// Socket.io setup, if needed
+const server = app.listen(process.env.PORT || 10000, () => {
+    console.log('Server running on port ' + (process.env.PORT || 10000));
+});
+
+// Socket.io setup (optional for real-time chat)
+const io = require('socket.io')(server);
+io.on('connection', (socket) => {
+    console.log('a user connected');
+    socket.on('disconnect', () => {
+        console.log('user disconnected');
+    });
 });
