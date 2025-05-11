@@ -77,3 +77,6 @@ This project serves as a foundational experience in full-stack web development w
 ![Image](https://github.com/user-attachments/assets/8fabc386-39a4-4e8e-8fd1-7935fd2b4404)
 
 # CLIENT-2 VIEW:
+![Image](https://github.com/user-attachments/assets/0aca953f-7935-4dbc-9975-6167b3680aff)
+
+# REAL-TIME CHATT
