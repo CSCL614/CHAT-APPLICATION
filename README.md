@@ -69,3 +69,11 @@ Real-time chat applications are used in customer support systems, social media p
 # Conclusion
 
 This project serves as a foundational experience in full-stack web development with a focus on real-time communication. By combining Node.js, Socket.IO, and Bootstrap, it demonstrates how to create a dynamic, user-friendly web application capable of real-time interactions. It’s an excellent project for understanding WebSockets, learning server-client architecture, and gaining hands-on experience in modern web development.
+
+
+# OUT PUT
+
+# CLIENT-1 VIEW:
+![Image](https://github.com/user-attachments/assets/8fabc386-39a4-4e8e-8fd1-7935fd2b4404)
+
+# CLIENT-2 VIEW:
