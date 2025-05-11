@@ -80,3 +80,4 @@ This project serves as a foundational experience in full-stack web development w
 ![Image](https://github.com/user-attachments/assets/0aca953f-7935-4dbc-9975-6167b3680aff)
 
 # REAL-TIME CHATT
+![Image](https://github.com/user-attachments/assets/ca535b04-f1e4-4a26-a351-b1fb15964471)
