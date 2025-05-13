@@ -58,18 +58,34 @@ This chat application is accessible from both desktops and smartphones. You can 
   The project structure separates frontend and backend logic, making it easier to maintain and scale. Static assets are served from the public folder, and real-time events are managed in server.js.
 
   # How It Works
+  STEP 1:Run the Server on Your PC
+          
+          1. Open PowerShell or CMD in your project directory (D:\INTERNSHIP\TASK2\chat-app).
+          
+          2. Run the server with:  node server.js
 
-->When a user accesses the chat app through their browser, they are prompted to enter a name.
+          3. You should see this output if everything is working:  Server running on http://localhost:3000
 
-->Once the name is entered, the chat interface appears, and the user can send messages.
+STEP 2:Check Your PC's IP Address 
 
-->Each message is transmitted through Socket.IO to the Node.js server.
+          1. In CMD or PowerShell, run:  ipconfig
 
-->The server receives the message and emits it to all connected clients.
+          2. Look for the IPv4 Address under your Wi-Fi adapter (it should be something like 192.168.x.x).
 
-->All clients receive the message in real-time and display it with the sender’s name.
+STEP 3:Connect from Your Mobile Device
 
-->This process happens seamlessly, thanks to the persistent WebSocket connection maintained by Socket.IO.
+        1. Open a browser on your mobile device.
+
+        2. Type in the IP address of your PC and the port (:3000), for example:  http://192.168.x.x:3000
+         
+         (Replace 192.168.x.x with the actual IP address you got from ipconfig.)
+
+STEP 4:Test the Real-Time Chat
+
+        1. You should now see the chat interface on your mobile device.
+
+        2. Send a message from one device (either PC or mobile), and it should appear instantly on the other device. This proves the real-time chat is working!
+
 
 # Real-World Applications
 
