@@ -16,6 +16,15 @@
 
   A real-time chat application is an essential tool for modern communication. This project aims to develop a fully functional web-based chat application that allows multiple users to send and receive messages instantly using WebSockets, facilitated by the powerful Socket.IO library. This application integrates both frontend and backend components and provides users with an interactive interface built using HTML, CSS, JavaScript, and Bootstrap for styling.
 
+# Project Structure:
+    TASK2/
+    ├──chat-app/
+       ├─ public/
+       │ ├── index.html
+       │ ├── style.css
+       ├── server.js
+       ├── package.json
+
 # Overview
 
 The primary goal of this application is to provide a platform where users can communicate in real time. It mimics the functionality of popular messaging platforms such as WhatsApp Web or Messenger, albeit on a simpler scale. Unlike traditional request-response systems that rely on repeated polling to check for updates, this chat app leverages WebSockets, a protocol that enables two-way interactive communication between the user's browser and the server.
